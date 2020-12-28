@@ -25,3 +25,14 @@ fldIntensidad.setNumeric(0,9950,20);
 fldIntensidad.setText("20");
 fldDuracion.setText("500");
 }
+
+void keypressed(){
+  if(key==ENTER){
+    int temp;
+temp=int(fldIntensidad.getValueI()/39);
+println(temp);
+  port.write(temp);
+  delay(fldDuracion.getValueI());
+  port.write(0);
+  }
+}
