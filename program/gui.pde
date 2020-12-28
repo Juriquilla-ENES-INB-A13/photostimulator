@@ -38,7 +38,7 @@ public void createGUI(){
   surface.setTitle("Sketch Window");
   lblIntensidad = new GLabel(this, 30, 90, 120, 20);
   lblIntensidad.setTextAlign(GAlign.CENTER, GAlign.MIDDLE);
-  lblIntensidad.setText("Intensidad:");
+  lblIntensidad.setText("Intensidad (mcd):");
   lblIntensidad.setOpaque(false);
   fldIntensidad = new GTextField(this, 170, 90, 60, 20, G4P.SCROLLBARS_NONE);
   fldIntensidad.setOpaque(true);
